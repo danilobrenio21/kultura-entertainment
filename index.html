@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kultura Entertainment Production</title>
+  <meta name="description" content="Kultura Entertainment Production - Celebrating stories through Film, Live Events, Entertainment, and Creative Workshops." />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            brandGold: '#D4AF37',
+            brandDark: '#0A0A0B',
+            brandCard: '#141416',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brandDark text-slate-200 font-sans antialiased selection:bg-brandGold selection:text-black">
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-brandDark/85 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="text-2xl font-bold tracking-wider uppercase font-serif text-white">
+        KULTURA<span class="text-brandGold">.</span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide text-slate-300">
+        <a href="#about" class="hover:text-brandGold transition-colors">About</a>
+        <a href="#services" class="hover:text-brandGold transition-colors">What We Do</a>
+        <a href="#pillars" class="hover:text-brandGold transition-colors">Pillars</a>
+        <a href="#contact" class="px-5 py-2.5 rounded-full bg-brandGold text-black font-bold hover:bg-yellow-400 transition-transform active:scale-95 shadow-lg shadow-yellow-500/20">
+          Partner With Us
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <div class="absolute inset-0 bg-radial from-brandGold/10 via-transparent to-transparent opacity-60"></div>
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10 py-16">
+      <span class="inline-block px-4 py-1.5 rounded-full border border-brandGold/30 bg-brandGold/10 text-brandGold text-xs uppercase tracking-widest font-bold mb-6">
+        Entertainment • Film • Events • Workshops
+      </span>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white leading-tight mb-6">
+        Crafting Cultural Narratives & <span class="italic text-brandGold">Dynamic Experiences</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+        Kultura Entertainment Production empowers visionaries, storytellers, and creators through groundbreaking cinema, live events, and creative development.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-brandGold text-black font-bold text-base hover:bg-yellow-400 transition-all shadow-xl shadow-yellow-500/20">
+          Explore Our Work
+        </a>
+        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white font-semibold text-base transition-colors">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-24 border-t border-white/10 bg-brandCard/40">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs uppercase tracking-widest text-brandGold font-bold mb-3">Our Core Pillars</h2>
+        <p class="text-3xl md:text-4xl font-serif font-bold text-white">What We Bring to Life</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-brandCard p-8 rounded-2xl border border-white/10 hover:border-brandGold/50 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-brandGold flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+            🎬
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Film & Cinema</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Independent films, documentaries, shorts, and cinematic narratives highlighting authentic voices and rich cultural heritage.
+          </p>
+        </div>
+
+        <div class="bg-brandCard p-8 rounded-2xl border border-white/10 hover:border-brandGold/50 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-brandGold flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+            🎭
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Entertainment</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Multi-platform content creation, digital productions, showcases, and stage performances designed to captivate audiences.
+          </p>
+        </div>
+
+        <div class="bg-brandCard p-8 rounded-2xl border border-white/10 hover:border-brandGold/50 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-brandGold flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+            🎟️
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Events & Festivals</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Organizing high-impact film screenings, community gatherings, brand activations, and cultural celebrations.
+          </p>
+        </div>
+
+        <div class="bg-brandCard p-8 rounded-2xl border border-white/10 hover:border-brandGold/50 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-brandGold flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+            💡
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Workshops & Training</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Hands-on masterclasses in filmmaking, acting, creative production, and digital storytelling for emerging artists.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-xs uppercase tracking-widest text-brandGold font-bold mb-3">Who We Are</h2>
+        <h3 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6 leading-snug">
+          Championing stories that bridge tradition and future entertainment.
+        </h3>
+        <p class="text-slate-400 leading-relaxed mb-6 font-light">
+          At <strong class="text-white">Kultura Entertainment Production</strong>, we believe in the power of visual arts, live spectacles, and skill-sharing to unite communities and elevate local craftsmanship onto global stages.
+        </p>
+        <div class="space-y-4 border-l-2 border-brandGold/40 pl-4 text-sm text-slate-300">
+          <p>✨ <strong>Authenticity:</strong> Grounded in cultural expression and truth.</p>
+          <p>🚀 <strong>Innovation:</strong> Contemporary visual styles and seamless event execution.</p>
+          <p>🤝 <strong>Community:</strong> Mentoring new talents through specialized masterclasses.</p>
+        </div>
+      </div>
+
+      <div class="relative bg-gradient-to-tr from-brandCard to-slate-900 border border-white/10 rounded-3xl p-8 flex flex-col justify-center shadow-2xl">
+        <div class="space-y-6">
+          <div class="p-6 rounded-2xl bg-white/5 border border-white/5">
+            <span class="text-brandGold font-serif font-bold text-2xl block mb-1">Our Mission</span>
+            <p class="text-slate-300 text-sm">To produce transformative cinematic pieces, curate unforgettable gatherings, and empower creative minds through hands-on education.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white/5 border border-white/5">
+            <span class="text-brandGold font-serif font-bold text-2xl block mb-1">Our Vision</span>
+            <p class="text-slate-300 text-sm">To become a benchmark creative powerhouse known for cultural depth, artistic integrity, and exceptional production value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 border-t border-white/10 bg-brandCard/30">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-xs uppercase tracking-widest text-brandGold font-bold mb-3">Let's Create Together</h2>
+      <p class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Have a Project or Collaboration in Mind?</p>
+      <p class="text-slate-400 mb-10">Whether you need production support, event organization, or want to join our creative workshops, our team is ready.</p>
+
+      <form action="mailto:your-email@example.com" method="POST" enctype="text/plain" class="space-y-4 text-left">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Your Name" class="w-full px-5 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-brandGold" required />
+          <input type="email" placeholder="Your Email Address" class="w-full px-5 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-brandGold" required />
+        </div>
+        <select class="w-full px-5 py-3 rounded-xl bg-black/50 border border-white/10 text-slate-300 focus:outline-none focus:border-brandGold">
+          <option value="General Inquiry">Select Area of Interest</option>
+          <option value="Film Production">Film & Video Production</option>
+          <option value="Events">Event Collaboration</option>
+          <option value="Workshops">Workshops & Creative Training</option>
+          <option value="Sponsorship">Sponsorship & Partnerships</option>
+        </select>
+        <textarea rows="4" placeholder="Tell us about your project or inquiry..." class="w-full px-5 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-brandGold" required></textarea>
+        
+        <button type="submit" class="w-full py-4 rounded-xl bg-brandGold text-black font-bold uppercase tracking-wider hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t border-white/10 text-center text-slate-500 text-sm">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="font-serif font-bold text-slate-300 uppercase tracking-wider">Kultura Entertainment Production</p>
+      <p>&copy; 2026 Kultura Entertainment Production. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
