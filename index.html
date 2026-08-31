@@ -30,31 +30,17 @@
   </script>
 
   <style>
-    /* Custom Modern Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #08080A; }
     ::-webkit-scrollbar-thumb { background: #26262b; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
 
-    /* Animated Link Underline */
-    .nav-link {
-      position: relative;
-    }
+    .nav-link { position: relative; }
     .nav-link::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -4px;
-      left: 0;
-      background-color: #D4AF37;
-      transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #D4AF37; transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .nav-link:hover::after {
-      width: 100%;
-    }
+    .nav-link:hover::after { width: 100%; }
 
-    /* Card Hover Lift & Glow */
     .ui-card {
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
     }
@@ -249,7 +235,7 @@
         <div class="ui-card bg-brandCard rounded-3xl border border-white/10 overflow-hidden flex flex-col justify-between group">
           <div>
             <div class="h-52 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1574717024453-354056aafd9f?auto=format&fit=crop&w=700&q=80" alt="Editing suite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+              <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80" alt="Post-Production Editing Suite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
               <div class="absolute top-3 left-3 bg-brandDark/85 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs font-bold text-brandGold">
                 Hands-On Suite
               </div>
