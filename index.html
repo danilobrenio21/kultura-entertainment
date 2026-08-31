@@ -48,9 +48,9 @@
       </nav>
 
       <button id="menu-btn" aria-label="Toggle navigation menu" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none">
-        <span class="block w-5 h-0.5 bg-brandGold mb-1 transition-transform"></span>
-        <span class="block w-5 h-0.5 bg-brandGold mb-1 transition-transform"></span>
-        <span class="block w-5 h-0.5 bg-brandGold transition-transform"></span>
+        <span class="block w-5 h-0.5 bg-brandGold mb-1"></span>
+        <span class="block w-5 h-0.5 bg-brandGold mb-1"></span>
+        <span class="block w-5 h-0.5 bg-brandGold"></span>
       </button>
     </div>
 
@@ -84,12 +84,185 @@
         Kultura Entertainment Production empowers visionaries, storytellers, and creators through groundbreaking cinema, live events, and creative development.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="film.html" class="w-full sm:w-auto px-8 py-4 rounded-full bg-brandGold text-black font-bold text-base hover:bg-yellow-400 transition-all shadow-xl shadow-yellow-500/20">
-          Explore Film Slate
+        <a href="#upcoming-events" class="w-full sm:w-auto px-8 py-4 rounded-full bg-brandGold text-black font-bold text-base hover:bg-yellow-400 transition-all shadow-xl shadow-yellow-500/20">
+          Upcoming Events
         </a>
-        <a href="events.html" class="w-full sm:w-auto px-8 py-4 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white font-semibold text-base transition-colors backdrop-blur-sm">
-          View Events & Festivals
+        <a href="#upcoming-workshops" class="w-full sm:w-auto px-8 py-4 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white font-semibold text-base transition-colors backdrop-blur-sm">
+          Join Workshops
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="upcoming-events" class="py-24 border-t border-white/10 bg-brandCard/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-brandGold font-bold mb-3 block">Mark Your Calendar</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">Upcoming Events & Festivals</h2>
+        </div>
+        <a href="events.html" class="text-sm font-semibold text-brandGold hover:underline flex items-center gap-1">
+          View All Events &rarr;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-brandCard rounded-3xl border border-white/10 overflow-hidden hover:border-brandGold/40 transition-all group flex flex-col justify-between">
+          <div>
+            <div class="h-64 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80" alt="Pamana Film Festival" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-4 left-4 bg-brandDark/90 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10 text-center">
+                <span class="block text-xs uppercase tracking-wider text-brandGold font-bold">Planned</span>
+                <span class="block text-lg font-bold text-white font-serif">2027</span>
+              </div>
+              <div class="absolute top-4 right-4 bg-amber-500/20 text-brandGold border border-brandGold/30 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold uppercase">
+                Film Festival
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-white mb-2">Pamana Film Festival</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                A nationwide independent festival and screening competition dedicated to indigenous roots, regional folklore, and new voices in cinema.
+              </p>
+              <div class="flex items-center gap-4 text-xs text-slate-400 border-t border-white/10 pt-4">
+                <span>📍 Metro Manila & Regional Hubs</span>
+                <span>🎬 Screenings & Awards</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 pt-0">
+            <a href="#contact" onclick="prefillInquiry('Event Organization & Festivals')" class="block w-full text-center py-3.5 rounded-xl bg-brandGold text-black font-bold uppercase tracking-wider text-xs hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20 active:scale-95">
+              Secure Your Spot / Pre-Register
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-brandCard rounded-3xl border border-white/10 overflow-hidden hover:border-brandGold/40 transition-all group flex flex-col justify-between">
+          <div>
+            <div class="h-64 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Creator Community Meetup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-4 left-4 bg-brandDark/90 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10 text-center">
+                <span class="block text-xs uppercase tracking-wider text-brandGold font-bold">Upcoming</span>
+                <span class="block text-lg font-bold text-white font-serif">Quarterly</span>
+              </div>
+              <div class="absolute top-4 right-4 bg-amber-500/20 text-brandGold border border-brandGold/30 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold uppercase">
+                Networking & Mixers
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-white mb-2">Creator Community Meetup & Showcase</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                Exclusive mixers and pitch sessions for directors, videographers, scriptwriters, and digital content creators to collaborate on upcoming productions.
+              </p>
+              <div class="flex items-center gap-4 text-xs text-slate-400 border-t border-white/10 pt-4">
+                <span>📍 Manila Creative Lounges</span>
+                <span>🤝 Live Panels & Pitches</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 pt-0">
+            <a href="#contact" onclick="prefillInquiry('Event Organization & Festivals')" class="block w-full text-center py-3.5 rounded-xl bg-brandGold text-black font-bold uppercase tracking-wider text-xs hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20 active:scale-95">
+              Secure Your Spot
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="upcoming-workshops" class="py-24 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-brandGold font-bold mb-3 block">Level Up Your Craft</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">Upcoming Workshops & Masterclasses</h2>
+        </div>
+        <a href="workshops.html" class="text-sm font-semibold text-brandGold hover:underline flex items-center gap-1">
+          View All Workshops &rarr;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-brandCard rounded-3xl border border-white/10 overflow-hidden hover:border-brandGold/40 transition-all group flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=700&q=80" alt="Directing workshop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 left-3 bg-brandDark/90 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs font-bold text-brandGold">
+                Weekend Intensive
+              </div>
+            </div>
+            <div class="p-6">
+              <span class="text-xs text-brandGold font-semibold uppercase tracking-wider block mb-1">Production Track</span>
+              <h3 class="text-xl font-bold text-white mb-2">Cinematography & Directing</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                Framing, cinema camera operation, dynamic camera movement, and lighting setups on a practical set.
+              </p>
+              <div class="text-xs text-slate-400 space-y-1 mb-4">
+                <p>🗓️ <strong>Format:</strong> In-Person Studio Sessions</p>
+                <p>👥 <strong>Seats:</strong> Limited to 15 Participants</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#contact" onclick="prefillInquiry('Workshops & Masterclasses')" class="block w-full text-center py-3 rounded-xl bg-brandGold text-black font-bold uppercase tracking-wider text-xs hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20 active:scale-95">
+              Secure Your Spot
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-brandCard rounded-3xl border border-white/10 overflow-hidden hover:border-brandGold/40 transition-all group flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1574717024453-354056aafd9f?auto=format&fit=crop&w=700&q=80" alt="Editing masterclass" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 left-3 bg-brandDark/90 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs font-bold text-brandGold">
+                Hands-On Suite
+              </div>
+            </div>
+            <div class="p-6">
+              <span class="text-xs text-brandGold font-semibold uppercase tracking-wider block mb-1">Post-Production Track</span>
+              <h3 class="text-xl font-bold text-white mb-2">Post-Production & Editing</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                Color grading, audio balancing, sound layering, and pacing for commercial and indie film releases.
+              </p>
+              <div class="text-xs text-slate-400 space-y-1 mb-4">
+                <p>🗓️ <strong>Format:</strong> Hybrid / Live Lab</p>
+                <p>👥 <strong>Seats:</strong> Limited to 20 Participants</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#contact" onclick="prefillInquiry('Workshops & Masterclasses')" class="block w-full text-center py-3 rounded-xl bg-brandGold text-black font-bold uppercase tracking-wider text-xs hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20 active:scale-95">
+              Secure Your Spot
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-brandCard rounded-3xl border border-white/10 overflow-hidden hover:border-brandGold/40 transition-all group flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80" alt="Production management" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 left-3 bg-brandDark/90 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs font-bold text-brandGold">
+                Executive Track
+              </div>
+            </div>
+            <div class="p-6">
+              <span class="text-xs text-brandGold font-semibold uppercase tracking-wider block mb-1">Business Track</span>
+              <h3 class="text-xl font-bold text-white mb-2">Production & Film Finance</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                Indie movie budgeting, preparing pitch decks, securing brand sponsorships, and managing logistical schedules.
+              </p>
+              <div class="text-xs text-slate-400 space-y-1 mb-4">
+                <p>🗓️ <strong>Format:</strong> Intensive Masterclass</p>
+                <p>👥 <strong>Seats:</strong> Limited Seats Available</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#contact" onclick="prefillInquiry('Workshops & Masterclasses')" class="block w-full text-center py-3 rounded-xl bg-brandGold text-black font-bold uppercase tracking-wider text-xs hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20 active:scale-95">
+              Secure Your Spot
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -121,55 +294,11 @@
     </div>
   </section>
 
-  <section class="py-24 border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-xs uppercase tracking-widest text-brandGold font-bold mb-3">Explore Kultura</h2>
-        <p class="text-3xl md:text-4xl font-serif font-bold text-white">Our Main Pillars</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <a href="film.html" class="bg-brandCard rounded-2xl border border-white/10 overflow-hidden hover:border-brandGold/50 transition-all group block">
-          <div class="h-56 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80" alt="Film slate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            <div class="absolute inset-0 bg-gradient-to-t from-brandDark via-transparent to-transparent"></div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brandGold transition-colors">Film & Cinema Slate &rarr;</h3>
-            <p class="text-slate-400 text-sm">Discover our original feature narratives, documentaries, and cinematic commercial productions.</p>
-          </div>
-        </a>
-
-        <a href="events.html" class="bg-brandCard rounded-2xl border border-white/10 overflow-hidden hover:border-brandGold/50 transition-all group block">
-          <div class="h-56 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80" alt="Festivals and events" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            <div class="absolute inset-0 bg-gradient-to-t from-brandDark via-transparent to-transparent"></div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brandGold transition-colors">Events & Festivals &rarr;</h3>
-            <p class="text-slate-400 text-sm">Explore the Pamana Film Festival, community meetups, and live entertainment activations.</p>
-          </div>
-        </a>
-
-        <a href="workshops.html" class="bg-brandCard rounded-2xl border border-white/10 overflow-hidden hover:border-brandGold/50 transition-all group block">
-          <div class="h-56 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80" alt="Workshops and training" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            <div class="absolute inset-0 bg-gradient-to-t from-brandDark via-transparent to-transparent"></div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brandGold transition-colors">Creative Workshops &rarr;</h3>
-            <p class="text-slate-400 text-sm">Master cinematography, editing workflows, and project production with industry professionals.</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="py-24 border-t border-white/10 bg-brandCard/30">
+  <section id="contact" class="py-24 border-t border-white/10 bg-brandCard/40">
     <div class="max-w-3xl mx-auto px-6 text-center">
-      <span class="text-xs uppercase tracking-widest text-brandGold font-bold mb-3 block">Get In Touch</span>
-      <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Partner With Kultura</h2>
-      <p class="text-slate-400 mb-10">Whether you want to co-produce a film, sponsor an event, or enroll in a workshop, send us a message below.</p>
+      <span class="text-xs uppercase tracking-widest text-brandGold font-bold mb-3 block">Join Us / Partner</span>
+      <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Secure Your Spot & Get In Touch</h2>
+      <p class="text-slate-400 mb-10">Reserve your workshop seat, register for upcoming event notifications, or discuss collaboration opportunities.</p>
 
       <form action="mailto:kulturaproductions@example.com" method="POST" enctype="text/plain" class="space-y-4 text-left bg-brandCard p-8 rounded-3xl border border-white/10 shadow-2xl">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -184,23 +313,23 @@
         </div>
 
         <div>
-          <label class="block text-xs uppercase tracking-wider text-slate-400 font-bold mb-2">Area of Interest</label>
-          <select class="w-full px-5 py-3.5 rounded-xl bg-black/50 border border-white/10 text-slate-300 focus:outline-none focus:border-brandGold">
-            <option>Film Production & Co-Production</option>
-            <option>Event Organization & Festivals</option>
-            <option>Workshops & Masterclasses</option>
-            <option>Brand Sponsorship & Commercial Media</option>
-            <option>General Inquiries</option>
+          <label class="block text-xs uppercase tracking-wider text-slate-400 font-bold mb-2">Area of Interest / Registration</label>
+          <select id="inquiry-select" class="w-full px-5 py-3.5 rounded-xl bg-black/50 border border-white/10 text-slate-300 focus:outline-none focus:border-brandGold">
+            <option value="Workshops & Masterclasses">Workshops & Masterclasses (Secure a Spot)</option>
+            <option value="Event Organization & Festivals">Event Organization & Festivals</option>
+            <option value="Film Production & Co-Production">Film Production & Co-Production</option>
+            <option value="Brand Sponsorship & Commercial Media">Brand Sponsorship & Commercial Media</option>
+            <option value="General Inquiries">General Inquiries</option>
           </select>
         </div>
 
         <div>
-          <label class="block text-xs uppercase tracking-wider text-slate-400 font-bold mb-2">Message</label>
-          <textarea rows="4" placeholder="Tell us about your project, timeline, or idea..." class="w-full px-5 py-3.5 rounded-xl bg-black/50 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-brandGold" required></textarea>
+          <label class="block text-xs uppercase tracking-wider text-slate-400 font-bold mb-2">Message or Specific Event/Workshop</label>
+          <textarea rows="4" placeholder="Mention the specific workshop, event date, or project proposal you are interested in..." class="w-full px-5 py-3.5 rounded-xl bg-black/50 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-brandGold" required></textarea>
         </div>
 
         <button type="submit" class="w-full py-4 rounded-xl bg-brandGold text-black font-bold uppercase tracking-wider hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20">
-          Send Message
+          Confirm Registration / Submit Message
         </button>
       </form>
     </div>
@@ -220,6 +349,13 @@
     menuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
+
+    function prefillInquiry(value) {
+      const select = document.getElementById('inquiry-select');
+      if (select) {
+        select.value = value;
+      }
+    }
   </script>
 
 </body>
