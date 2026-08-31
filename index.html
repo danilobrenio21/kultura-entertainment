@@ -30,17 +30,20 @@
   </script>
 
   <style>
+    /* Custom Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #08080A; }
     ::-webkit-scrollbar-thumb { background: #26262b; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
 
+    /* Animated Link Underline */
     .nav-link { position: relative; }
     .nav-link::after {
       content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #D4AF37; transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .nav-link:hover::after { width: 100%; }
 
+    /* Card Lift & Glow */
     .ui-card {
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
     }
@@ -61,6 +64,7 @@
 
       <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide text-slate-300">
         <a href="index.html" class="text-brandGold font-bold nav-link">Home</a>
+        <a href="about.html" class="hover:text-white transition-colors nav-link">About Us</a>
         <a href="film.html" class="hover:text-white transition-colors nav-link">Film & Cinema</a>
         <a href="events.html" class="hover:text-white transition-colors nav-link">Events</a>
         <a href="workshops.html" class="hover:text-white transition-colors nav-link">Workshops</a>
@@ -78,6 +82,7 @@
 
     <div id="mobile-menu" class="hidden md:hidden bg-brandDark/95 backdrop-blur-2xl border-b border-white/10 px-6 py-6 space-y-4 transition-all">
       <a href="index.html" class="block text-base font-semibold text-brandGold py-1">Home</a>
+      <a href="about.html" class="block text-base font-semibold text-slate-300 hover:text-brandGold py-1">About Us</a>
       <a href="film.html" class="block text-base font-semibold text-slate-300 hover:text-brandGold py-1">Film & Cinema</a>
       <a href="events.html" class="block text-base font-semibold text-slate-300 hover:text-brandGold py-1">Events & Festivals</a>
       <a href="workshops.html" class="block text-base font-semibold text-slate-300 hover:text-brandGold py-1">Workshops & Masterclasses</a>
@@ -106,11 +111,11 @@
         Kultura Entertainment Production empowers visionaries, storytellers, and creators through groundbreaking cinema, live events, and creative development.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#upcoming-events" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-brandGold to-yellow-500 text-black font-bold text-base hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:scale-105 active:scale-95 transition-all duration-300">
-          Upcoming Events
+        <a href="about.html" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-brandGold to-yellow-500 text-black font-bold text-base hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:scale-105 active:scale-95 transition-all duration-300">
+          Learn About Us
         </a>
-        <a href="#upcoming-workshops" class="w-full sm:w-auto px-8 py-4 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/40 text-white font-semibold text-base transition-all duration-300 backdrop-blur-md hover:scale-105 active:scale-95">
-          Join Workshops
+        <a href="#upcoming-events" class="w-full sm:w-auto px-8 py-4 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/40 text-white font-semibold text-base transition-all duration-300 backdrop-blur-md hover:scale-105 active:scale-95">
+          Explore Events
         </a>
       </div>
     </div>
@@ -301,21 +306,19 @@
     </div>
   </section>
 
-  <section id="about" class="py-24 border-t border-white/10 bg-brandCard/30">
+  <section class="py-24 border-t border-white/10 bg-brandCard/30">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div>
-        <h2 class="text-xs uppercase tracking-widest text-brandGold font-bold mb-3">Who We Are</h2>
-        <h3 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6 leading-snug">
+        <span class="text-xs uppercase tracking-widest text-brandGold font-bold mb-3 block">Our Heritage</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6 leading-snug">
           Championing stories that bridge tradition and future entertainment.
-        </h3>
+        </h2>
         <p class="text-slate-400 leading-relaxed mb-6 font-light">
           At <strong class="text-white">Kultura Entertainment Production</strong>, we believe in the power of visual arts, live spectacles, and skill-sharing to unite communities and elevate local craftsmanship onto global stages.
         </p>
-        <div class="space-y-4 border-l-2 border-brandGold/40 pl-4 text-sm text-slate-300">
-          <p><strong class="text-white">Original Cinema:</strong> Distinct narratives rooted in authentic culture and human experience.</p>
-          <p><strong class="text-white">Live Events:</strong> Screenings, forums, and gatherings designed for deep community impact.</p>
-          <p><strong class="text-white">Workshops & Mentorship:</strong> Equipping emerging creators through direct, practical masterclasses.</p>
-        </div>
+        <a href="about.html" class="inline-block text-brandGold font-semibold hover:underline">
+          Read full mission, vision & company profile &rarr;
+        </a>
       </div>
 
       <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
